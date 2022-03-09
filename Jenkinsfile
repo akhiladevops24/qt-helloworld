@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                git 'https://github.com/akhiladevops24/qt-helloworld.git'
+                git  branch: 'qa', url:'https://github.com/akhiladevops24/qt-helloworld.git'
             }
         }
         stage('Build') {
